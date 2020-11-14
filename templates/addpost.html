@@ -1,0 +1,56 @@
+<HTML>
+    <head>
+        <title>Add New Post</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+       
+        
+        <form class="text-center border border-light p-5" action="/addpost" method="POST"  enctype="multipart/form-data">
+
+            <p class="h4 mb-4">Add New Post</p>
+        
+            <!-- Name -->
+            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Date" name="date" readonly>
+        
+            <!-- Email -->
+            <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="writer" name="writer" readonly>
+        
+            <!-- Subject -->
+            <label>Subject</label>
+
+            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Tittle" name="tittle"  required>
+        
+            <!-- Message -->
+            <div class="form-group">
+                <textarea class="form-control rounded-0" id="content" rows="15" placeholder="content" name="content" required></textarea>
+            </div>
+
+
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="picture" name="picture"
+                  aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose Picture</label>
+              </div>
+              <br>
+              <br>  
+              <br>
+              
+         
+        
+            <!-- Send button -->
+            <button class="btn btn-info btn-block" type="submit">Post</button>
+        
+        </form>
+        <!-- Default form contact -->
+
+
+
+
+
+    </body>
+
+</HTML>
